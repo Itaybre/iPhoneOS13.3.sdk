@@ -1,0 +1,31 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64e ]
+uuids:                 [ 'arm64e: 'BC1659B1-FA06-3B49-9720-2EBED90F4571' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/swift/libswiftHomeKit.dylib
+current-version:       0
+compatibility-version: 1
+swift-version:         6
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64e ]
+    symbols:              [ _$s7HomeKit49HMCharacteristicPropertySupportsEventNotificationSSvg,
+                            __swift_FORCE_LOAD_$_swiftHomeKit ]
+undefineds:
+  - archs:                [ arm64e ]
+    symbols:              [ _$sSS10FoundationE36_unconditionallyBridgeFromObjectiveCySSSo8NSStringCSgFZ,
+                            _swift_bridgeObjectRetain, _swift_once,
+                            dyld_stub_binder ]
+    weak-def-symbols:     [ _HMCharacteristicPropertySupportsEventNotification,
+                            __swift_FORCE_LOAD_$_swiftCoreFoundation,
+                            __swift_FORCE_LOAD_$_swiftCoreGraphics,
+                            __swift_FORCE_LOAD_$_swiftCoreImage,
+                            __swift_FORCE_LOAD_$_swiftDarwin,
+                            __swift_FORCE_LOAD_$_swiftDispatch,
+                            __swift_FORCE_LOAD_$_swiftFoundation,
+                            __swift_FORCE_LOAD_$_swiftMetal,
+                            __swift_FORCE_LOAD_$_swiftObjectiveC,
+                            __swift_FORCE_LOAD_$_swiftQuartzCore,
+                            __swift_FORCE_LOAD_$_swiftUIKit ]
+...

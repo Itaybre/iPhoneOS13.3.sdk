@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64e ]
+uuids:                 [ 'arm64e: '7DB3A3C6-3E3C-3428-A4AD-EF8B1480E321' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DataDetectorsCore.framework/PlugIns/PhoneNumbers.plugin/PhoneNumbers
+current-version:       659
+compatibility-version: 1
+exports:
+  - archs:                [ arm64e ]
+    symbols:              [ _GetPrefixInitialState, _GetResultPostprocessor,
+                            _GetSuffixInitialState, _GetVersion ]
+undefineds:
+  - archs:                [ arm64e ]
+    symbols:              [ _CFRelease, _CFStringCompare,
+                            _DDDFAScannerSimulateState, _DDResultAddSubresult,
+                            _DDResultCreate, _DDResultGetQueryRange,
+                            _DDResultGetType, ___CFConstantStringClassReference,
+                            dyld_stub_binder ]
+...

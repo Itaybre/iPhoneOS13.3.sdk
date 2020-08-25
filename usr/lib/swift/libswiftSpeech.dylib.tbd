@@ -1,0 +1,48 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64e ]
+uuids:                 [ 'arm64e: '0BF95A4A-841D-3A1F-8733-84A3D89DB219' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/swift/libswiftSpeech.dylib
+current-version:       0
+compatibility-version: 1
+swift-version:         6
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64e ]
+    symbols:              [ _$sSo17SFAcousticFeatureC6SpeechE08acousticB13ValuePerFrameSaySdGvg,
+                            _$sSo17SFAcousticFeatureC6SpeechE08acousticB13ValuePerFrameSaySdGvpMV,
+                            __swift_FORCE_LOAD_$_swiftSpeech ]
+undefineds:
+  - archs:                [ arm64e ]
+    symbols:              [ _$sSa10FoundationE36_unconditionallyBridgeFromObjectiveCySayxGSo7NSArrayCSgFZ,
+                            _$sSd10FoundationEySdSo8NSNumberChcfC, _$sSdN,
+                            _$ss18_CocoaArrayWrapperV8endIndexSivg,
+                            _$ss18_CocoaArrayWrapperVyyXlSicig,
+                            _$ss23_ContiguousArrayStorageCMa,
+                            __swiftEmptyArrayStorage, _malloc_size, _memcpy,
+                            _memmove, _objc_msgSend, _objc_release, _objc_retain,
+                            _objc_retainAutoreleasedReturnValue,
+                            _swift_allocObject, _swift_bridgeObjectRelease,
+                            _swift_bridgeObjectRetain,
+                            _swift_dynamicCastObjCClass,
+                            _swift_getInitializedObjCClass,
+                            _swift_getObjCClassMetadata,
+                            _swift_isUniquelyReferenced_nonNull_native,
+                            _swift_release, _swift_retain,
+                            _swift_unknownObjectRetain, dyld_stub_binder ]
+    objc-classes:         [ _NSNumber ]
+    weak-def-symbols:     [ __swift_FORCE_LOAD_$_swiftAVFoundation,
+                            __swift_FORCE_LOAD_$_swiftCoreAudio,
+                            __swift_FORCE_LOAD_$_swiftCoreFoundation,
+                            __swift_FORCE_LOAD_$_swiftCoreGraphics,
+                            __swift_FORCE_LOAD_$_swiftCoreMIDI,
+                            __swift_FORCE_LOAD_$_swiftCoreMedia,
+                            __swift_FORCE_LOAD_$_swiftDarwin,
+                            __swift_FORCE_LOAD_$_swiftDispatch,
+                            __swift_FORCE_LOAD_$_swiftFoundation,
+                            __swift_FORCE_LOAD_$_swiftMetal,
+                            __swift_FORCE_LOAD_$_swiftObjectiveC,
+                            __swift_FORCE_LOAD_$_swiftQuartzCore,
+                            __swift_FORCE_LOAD_$_swiftsimd ]
+...

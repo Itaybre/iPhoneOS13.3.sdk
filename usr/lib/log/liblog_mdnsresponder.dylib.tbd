@@ -1,0 +1,29 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64e ]
+uuids:                 [ 'arm64e: '94CA8612-5542-3509-A29B-1A01EBD1080A' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/log/liblog_mdnsresponder.dylib
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64e ]
+    symbols:              [ _DNSMessageExtractDomainName,
+                            _DNSMessageExtractDomainNameString,
+                            _DNSMessageExtractQuestion, _DNSMessageExtractRecord,
+                            _DNSMessageGetAnswerSection, _DNSMessageWriteQuery,
+                            _DomainNameAppendString, _DomainNameDupEx,
+                            _DomainNameEqual, _DomainNameFromString,
+                            _DomainNameToString, _OSLogCopyFormattedString ]
+undefineds:
+  - archs:                [ arm64e ]
+    symbols:              [ ___CFConstantStringClassReference, ___snprintf_chk,
+                            ___stack_chk_fail, ___stack_chk_guard, ___tolower,
+                            _inet_ntop, _malloc, _memcpy, _objc_alloc, _objc_msgSend,
+                            _objc_opt_class, _objc_opt_isKindOfClass,
+                            _objc_release, _objc_retain, _objc_retainAutorelease,
+                            _objc_retainAutoreleasedReturnValue, _strcmp,
+                            dyld_stub_binder ]
+    objc-classes:         [ _NSAttributedString, _NSData, _NSString ]
+...

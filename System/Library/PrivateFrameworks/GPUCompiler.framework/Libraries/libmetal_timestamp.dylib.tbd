@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64e ]
+uuids:                 [ 'arm64e: '0EEBBE0B-1878-3099-A04A-E6E9E646D336' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/GPUCompiler.framework/Libraries/libmetal_timestamp.dylib
+current-version:       902.9.66
+compatibility-version: 1
+exports:
+  - archs:                [ arm64e ]
+    symbols:              [ _getMetalTimeStamp ]
+undefineds:
+  - archs:                [ arm64e ]
+    symbols:              [ dyld_stub_binder ]
+...

@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64e ]
+uuids:                 [ 'arm64e: '66CDEB91-468A-3379-8B83-928D529E8156' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/libktrace.dylib
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64e ]
+    re-exports:           [ /System/Library/PrivateFrameworks/ktrace.framework/ktrace ]
+    symbols:              [ ___ktraceVersionNumber, ___ktraceVersionString ]
+undefineds:
+  - archs:                [ arm64e ]
+    symbols:              [ dyld_stub_binder ]
+...

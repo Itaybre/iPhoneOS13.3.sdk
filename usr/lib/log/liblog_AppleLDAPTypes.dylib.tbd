@@ -1,0 +1,20 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64e ]
+uuids:                 [ 'arm64e: 'F780C86D-5865-340B-BB07-9F9A078BA657' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/log/liblog_AppleLDAPTypes.dylib
+current-version:       52
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64e ]
+    symbols:              [ _OSLogCopyFormattedString ]
+undefineds:
+  - archs:                [ arm64e ]
+    symbols:              [ ___CFConstantStringClassReference, _objc_alloc,
+                            _objc_msgSend, _objc_opt_class,
+                            _objc_opt_isKindOfClass, _strcmp, dyld_stub_binder ]
+    objc-classes:         [ _NSAttributedString, _NSMutableString, _NSNumber,
+                            _NSString ]
+...

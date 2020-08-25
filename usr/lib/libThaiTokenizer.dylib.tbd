@@ -1,0 +1,45 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64e ]
+uuids:                 [ 'arm64e: 'E4F4F432-CF69-377A-8A38-A2B8B140A9D0' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/libThaiTokenizer.dylib
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64e ]
+    symbols:              [ _CreateTransitionArrayFromTrie, _GetChunk,
+                            _GetTokenizedSegmentedPoints, _GetTokenizedStrings,
+                            _MAXCHUNKSIZE, _MAXUNKCHOICE, _MAXWORDCHOICE,
+                            _MAXWORDSIZE, _ReleaseTransitionTable,
+                            _SINGLECHARUNKSCORE, _Search, _SetChunk, _StackCreate,
+                            _StackGetValue, _StackIsEmpty, _StackIsFull, _StackPop,
+                            _StackPush, _StackRelease, _TOKENIZEDONLYTHAI,
+                            _ThaiTokenizerAdvanceToNextToken,
+                            _ThaiTokenizerCreate, _ThaiTokenizerDestroy,
+                            _ThaiTokenizerGetCurrentTokenRange,
+                            _ThaiTokenizerGoToTokenAtIndex,
+                            _ThaiTokenizerSetString,
+                            _ThaiTokenizerSetStringWithRange, _UNKSCORE,
+                            _getChunkType, _getTokenType, _getUnkProb, _isAcronym,
+                            _isNumber, _isPunct, _isPunctAll, _isThai,
+                            _isThaiBreakChar, _isThaiConsonant, _isThaiEndingChar,
+                            _isThaiLeadingChar, _isThaiLeadingCharAtIndex,
+                            _isThaiPunct, _isThaiVowel, _isWhiteSpace, _mergeAcronym ]
+undefineds:
+  - archs:                [ arm64e ]
+    symbols:              [ _CFAllocatorAllocate, _CFAllocatorDeallocate,
+                            _CFArrayAppendArray, _CFArrayAppendValue,
+                            _CFArrayCreateMutable, _CFArrayGetCount,
+                            _CFArrayGetValueAtIndex, _CFBurstTrieContains,
+                            _CFBurstTrieCreateFromFile, _CFBurstTrieRelease,
+                            _CFNumberCreate, _CFNumberGetValue, _CFRelease, _CFShow,
+                            _CFStringAppend, _CFStringCreateMutable,
+                            _CFStringCreateWithCString,
+                            _CFStringCreateWithFormat,
+                            _CFStringCreateWithSubstring,
+                            _CFStringGetCharacterAtIndex, _CFStringGetLength,
+                            ___CFConstantStringClassReference, _calloc, _free,
+                            _getenv, _kCFAllocatorDefault, _kCFTypeArrayCallBacks,
+                            _malloc, dyld_stub_binder ]
+...

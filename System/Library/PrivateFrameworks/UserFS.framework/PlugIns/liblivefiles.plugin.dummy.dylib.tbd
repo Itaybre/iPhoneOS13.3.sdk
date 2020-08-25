@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64e ]
+uuids:                 [ 'arm64e: '39E86F54-7BDE-3FE5-A8F3-0A643BB8FED6' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/UserFS.framework/PlugIns/liblivefiles.plugin.dummy.dylib
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64e ]
+    symbols:              [ _dummy_ops, _livefiles_plugin_init, _root_node ]
+undefineds:
+  - archs:                [ arm64e ]
+    symbols:              [ ___stack_chk_fail, ___stack_chk_guard, _strcmp, _strncpy,
+                            dyld_stub_binder ]
+...
